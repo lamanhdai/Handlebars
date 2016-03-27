@@ -1,0 +1,13 @@
+$font-stack: Helvetica, sans-serif;
+$background-color: #000000;
+$primary-color: #000000;
+$max-width: 1200px;
+
+// for responsive
+$medium-up: 600px;
+$large-up: 1000px;
+
+body {
+  font: 60% $font-stack;
+  color: $primary-color;
+}
