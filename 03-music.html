@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Helpers - Handlebars JS Tutorial</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js" type="text/javascript"></script>
+	<script src="js/03-music.js" type="text/javascript"></script>
+	<style>
+	</style>
+</head>
+<body>
+	<h1>03 - Iterate array and pass to HTML</h1>
+	<script id="music-template" type="text/x-handlebars-template">
+		{{#list music}}
+		  <a href="{{url}}">{{name}}</a>
+		{{/list}}
+	</script>
+
+	<p>Please declare helper before pass to the template</p>
+	<div class="content-placeholder"><!--  /.content-placeholder --></div>
+</body>
+</html>
