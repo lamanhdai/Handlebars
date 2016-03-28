@@ -10,7 +10,7 @@ $(function(){
 	var placeHolder = $('.content-placeholder');
 
 	//04 - Get Json data and pass it to HTML template
-	$.get("/js/data/members.json",function(data,status,xhr){
+	$.get("js/data/members.json",function(data,status,xhr){
 		$.each(data,function(index,element){
 			//Generate HTML for each post
 			var html = theTemplate(element);
