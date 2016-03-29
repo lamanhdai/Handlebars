@@ -14,7 +14,7 @@ $(function(){
 		]
   };
 
-	//Define loop function
+	//Define block helper function
 	Handlebars.registerHelper('list', function(items, options) {
 	  var out = "<ul>";
 
