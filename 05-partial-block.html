@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Helpers - Handlebars JS Tutorial</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js" type="text/javascript"></script>
+  <script src="js/05-partial-block.js" type="text/javascript"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <h1>05 - Partial example</h1>
+  <script id="music-template" type="text/x-handlebars-template">
+    {{#each music}}
+      <p class="music_name"><a href="{{url}}">{{name}}</a></p>
+      {{> userMessage tagName="div"}}
+
+      <p><b>Comments</b></p>
+
+      {{#each guest}}
+        {{> userMessage tagName="div"}}
+      {{/each}}
+    {{/each}}
+  </script>
+
+  <p>Please declare helper before pass to the template</p>
+  <div class="content-placeholder"><!--  /.content-placeholder --></div>
+</body>
+</html>
